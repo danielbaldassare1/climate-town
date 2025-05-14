@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Town: Climate Crisis</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Coastal Town: Climate Crisis</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Town Funds:</span>
+                    <span id="money" class="stat-value">$1,000,000</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Turn:</span>
+                    <span id="turn" class="stat-value">1</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Climate Intensity:</span>
+                    <span id="intensity" class="stat-value">Low</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <div class="town-visualization">
+                <div id="town-map" class="town-map"></div>
+            </div>
+
+            <div class="game-panels">
+                <div id="projects-panel" class="panel">
+                    <h2>Adaptation Projects</h2>
+                    <div id="projects-list" class="projects-list"></div>
+                </div>
+
+                <div id="events-panel" class="panel">
+                    <h2>Events Log</h2>
+                    <div id="events-log" class="events-log"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button id="end-turn-btn" class="btn primary-btn">End Turn</button>
+        </div>
+
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <h2 id="modal-title">Title</h2>
+                <p id="modal-message">Message</p>
+                <button id="modal-close-btn" class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
